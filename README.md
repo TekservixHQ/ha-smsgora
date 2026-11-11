@@ -3,6 +3,8 @@
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://hacs.xyz/docs/faq/custom_repositories)
 [![tests](https://github.com/TekservixHQ/ha-smsgora/actions/workflows/tests.yml/badge.svg)](https://github.com/TekservixHQ/ha-smsgora/actions/workflows/tests.yml)
 
+**SMS Gora SMS Gateway** for Home Assistant (HACS): SMS alerts through your own Android phones and automations on incoming SMS. By Tekservix.
+
 Send SMS alerts from Home Assistant through your own Android phones with [SMS Gora](https://tekservix.com/smsgora/), and trigger automations when an SMS arrives.
 
 SMS alerts still reach people when there is no internet or app: alarms, water leaks, power cuts, a door left open. SMS Gora sends them from an ordinary SIM card in an Android phone you link to your account, so there's no sender ID registration and no per-message fee from us; your mobile operator bills the texts like any SMS.
