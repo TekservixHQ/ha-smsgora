@@ -1,0 +1,25 @@
+send_sms:
+  fields:
+    to:
+      required: true
+      example: "+15551234567, +447700900123"
+      selector:
+        text:
+    message:
+      required: true
+      example: "The front door was opened"
+      selector:
+        text:
+          multiline: true
+    device_id:
+      example: "42"
+      selector:
+        text:
+    sim_slot:
+      selector:
+        select:
+          options:
+            - label: "SIM 1"
+              value: "0"
+            - label: "SIM 2"
+              value: "1"

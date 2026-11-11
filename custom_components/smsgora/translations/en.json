@@ -1,0 +1,34 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "SMS Gora",
+        "description": "Send SMS through your own Android phones. You need a Tekservix account with SMS Gora and an API key (SMS Gora → API keys).",
+        "data": {
+          "api_key": "API key",
+          "recipients": "Default recipients (for notify), comma separated",
+          "device_id": "Phone ID (optional)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "The API key was not accepted.",
+      "cannot_connect": "Could not reach SMS Gora."
+    },
+    "abort": {
+      "already_configured": "This API key is already set up."
+    }
+  },
+  "services": {
+    "send_sms": {
+      "name": "Send SMS",
+      "description": "Send an SMS through your SMS Gora phones.",
+      "fields": {
+        "to": { "name": "To", "description": "One or more numbers in international format, comma separated." },
+        "message": { "name": "Message", "description": "The text to send." },
+        "device_id": { "name": "Phone ID", "description": "Send from this phone instead of your best online one." },
+        "sim_slot": { "name": "SIM", "description": "SIM 1 or SIM 2." }
+      }
+    }
+  }
+}
